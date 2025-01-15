@@ -1,0 +1,200 @@
+/* input.css */
+
+/* Ensure correct Tailwind base styles */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        /* Ensure correct Tailwind classes are used */
+        @apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor font-poppins tracking-wider overflow-x-hidden;
+    }
+
+    section {
+        /* Correct usage of Tailwind spacing utilities */
+        @apply py-16 md:pt-28 md:pb-20;
+    }
+
+    input,
+    select,
+    textarea {
+        @apply w-full dark:bg-darkBodyColor border border-gray-800 px-3 rounded-lg;
+    }
+
+    input:focus,
+    input:active,
+    select:focus,
+    select:active,
+    textarea:focus,
+    textarea:active {
+        @apply outline-none border-primaryColorLight;
+    }
+}
+
+@layer components {
+    /* Correct usage of Tailwind and custom classes */
+    .nav-link {
+        /* Using Tailwind's text color utilities */
+        @apply relative font-bold text-textColor lg:text-primaryColor dark:text-textColor;
+    }
+
+    .text-whiteColor {
+        color: #ffffff;
+    }
+
+    .nav-link::before {
+        /* Correct usage of pseudo-elements in Tailwind */
+        @apply content-[''] absolute w-full h-[2px] bg-gradient-to-r from-primaryColorLight to-primaryColor -bottom-[5px] left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
+    }
+
+    .active::before,
+    .nav-link:hover::before {
+        @apply scale-x-100 origin-left;
+    }
+
+    .btn {
+        /* Applying Tailwind and custom classes properly */
+        @apply relative overflow-hidden bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor px-7 py-3 rounded-full capitalize font-bold flex justify-center items-center;
+    }
+
+    .btn::before {
+        /* Correct usage of pseudo-elements in Tailwind */
+        @apply content-[''] absolute w-full h-full bg-gradient-to-r from-primaryColor to-primaryColorLight top-0 left-0 rounded-full scale-x-0 transition-transform ease-in-out origin-right duration-300;
+    }
+
+    .btn:hover::before {
+        @apply scale-x-100 origin-left;
+    }
+
+    .purple {
+        /* Direct CSS, not Tailwind */
+        color: rgb(8, 176, 232);
+    }
+
+    .btn_outline {
+        /* Using Tailwind's border and text color utilities */
+        @apply border border-primaryColorLight text-primaryColorLight py-4 px-9 rounded-full hover:bg-primaryColorLight hover:text-whiteColor duration-300;
+    }
+
+    .title,
+    .subtitle {
+        /* Correct usage of Tailwind and custom classes */
+        @apply text-4xl lg:text-6xl xl:text-[65px] font-bold bg-gradient-to-r from-primaryColorLight to-primaryColor dark:to-whiteColor inline-block text-transparent bg-clip-text pb-2;
+    }
+
+    .subtitle {
+        @apply text-3xl md:text-4xl lg:text-5xl;
+    }
+}
+
+@layer utilities {
+    /* Define your custom utility classes here */
+    .social-icon {
+        /* Correct usage of Tailwind and custom classes */
+        @apply relative border border-primaryColor text-primaryColorLight h-10 w-10 rounded-full grid place-items-center cursor-pointer hover:text-whiteColor duration-300;
+    }
+
+    .social-icon::before {
+        /* Correct usage of pseudo-elements in Tailwind */
+        @apply content-[''] absolute w-[100%] h-[100%] bg-primaryColorLight inset-0 rounded-full scale-0 transition-transform ease-in-out duration-300; 
+    }
+
+    .social-icon:hover::before {
+        @apply scale-100 origin-center;
+    }
+
+    /* My Quality services */
+    .service__item {
+        @apply flex flex-wrap items-center gap-3 px-4 py-8 border-b border-primaryColorLight hover:bg-primaryColorLight cursor-pointer duration-300;
+    }
+
+    .service__item div p {
+        @apply duration-300;
+    }
+
+    .service__item:hover div p {
+        @apply text-whiteColor;
+    }
+
+    .service__item div i {
+        @apply duration-300;
+    }
+
+    .service__item:hover div i {
+        @apply text-whiteColor -rotate-90;
+    }
+
+    /* My recent works */
+    .indicator {
+        transition: left 0.4s;
+    }
+
+    .work_card > div {
+        @apply duration-300;
+    }
+
+    .work_card:hover > div {
+        @apply bottom-0;
+    }
+
+    .work_card div i {
+        @apply duration-300 delay-300;
+    }
+
+    .work_card:hover div i {
+        @apply -rotate-90;
+    }
+
+    /* Experience & Education */
+    .exp_edu_card,
+    .exp_edu_card > p {
+        @apply duration-300;
+    }
+
+    .exp_edu_card:hover,
+    .exp_edu_card:hover > p {
+        @apply text-whiteColor;
+    }
+
+    /* My Skills */
+    .skills_card img {
+        @apply duration-300;
+    }
+
+    .skills_card:hover img {
+        @apply scale-110;
+    }
+
+    /* Certifications */
+    .blog_card img {
+        @apply w-full duration-300;
+    }
+    
+    .blog_card:hover img {
+        @apply scale-110;
+    }
+
+    .blog_card div,
+    .blog_card .blog_card_info p {
+        @apply duration-300;
+    }
+
+    .blog_card:hover .blog_card_info {
+        @apply bg-primaryColorLight text-whiteColor;
+    }
+
+    .blog_card:hover .blog_card_info p {
+        @apply text-whiteColor;
+    }
+
+    /* My Skills */
+    
+}
+

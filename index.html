@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Shraddha | Portfolio</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="navbar" class="sticky top-0 z-50 duration-300">
+        <nav class="relative container flex justify-between items-center">
+            <div class="py-5">
+                <img src="images/logo.png" alt="logo" id="logo" class="w-10 md:w-14">
+                <img src="images/logo_white.png" alt="white-logo" id="white-logo" class="w-10 hidden md:w-14">
+            </div>
+
+            <div id="nav-menu"
+                class="hidden absolute top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto">
+                <ul
+                    class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5">
+                    <li>
+                        <a href="#hero" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#quality_services" class="nav-link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#recent_works" class="nav-link">Works</a>
+                    </li>
+
+                    <li>
+                        <a href="#exp_edu" class="nav-link">Resume</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+
+                    <li>
+                        <button class="btn ml-10">
+                            <span class="z-10">Hire Me!</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <div id="nav-close" class="absolute top-6 right-3 text-whiteColor text-3xl cursor-pointer lg:hidden">
+                    <i class="ri-close-fill"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5 lg:ml-0">
+                <i class="ri-moon-line cursor-pointer ml-4 text-2xl" id="theme-toggle"></i>
+
+                <div id="hamburger" class="lg:hidden">
+                    <i class="ri-menu-2-line cursor-pointer text-2xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+
+        <!-- Hero Section -->
+    <section id="hero" class="relative py-5">
+        <div class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+        <div class="container">
+            <!-- Background Image (Hidden) -->
+            <div class="hidden md:block absolute top-0 left-[30%] lg:left[35%] animate-scaleAnimation">
+                <!-- This is empty in your code, adjust as needed -->
+            </div>
+
+            <!-- Hero Content -->
+            <div class="flex items-center gap-5">
+                <div class="hero__content space-y-2 md:w-1/2">
+                    <p class="heading font-bold">Hi!</p>
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold">My name is <span class="purple">Shraddha.</span></h3>
+                    <h1>
+                        <span class="text-2xl font-bold">I am a </span>
+                        <br>
+                        <span id="element" class="title"></span>
+                    </h1>
+
+                    <!-- hero image -->
+                    <div class="hero__image relative flex justify-center md:hidden">
+                        <!-- Blob -->
+                        <div class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+                        <img src="./images/person.jpg" alt="person" class="my-10 max-w-[75%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight">
+                    </div>
+
+                    <p class="max-w-xl text-xl pb-5">Skilled in advanced statistical techniques and machine learning for actionable data insights, specializing in driving strategic decisions and optimizing business performance through analytics and modeling.</p>
+
+                    <div class="flex items-center flex-wrap gap-5">
+                        <button class="btn_outline">
+                            Download CV <i class="fa-solid fa-download"></i>
+                        </button>
+
+                        <!-- Social Icons -->
+                        <div class="social-icon">
+                            <i class="fa-brands fa-linkedin z-10"></i>
+                        </div>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-instagram z-10"></i>
+                        </div>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-github z-10"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Content (Second Image) -->
+                <div class="relative hidden md:w-1/2 md:flex justify-center">
+                    <!-- Blob -->
+                    <div class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+                    <img src="./images/person.jpg" alt="person" class="my-10 md:w-full lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight">
+                </div>
+            </div>
+
+            <!-- Hero Footer -->
+            <div class="hero__footer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">5</p>
+                    <p>Projects <br> Completed</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">1</p>
+                    <p>Frontend <br> Internship</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">7</p>
+                    <p>Valuable <br> Certifications</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">4</p>
+                    <p>Workshops <br> Attended</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <!-- My Quality Services Section -->
+    <section id="quality_services" class="bg-sectionColor dark:bg-darkSectionColor">
+        <div class="container">
+            <div class="service__top flex flex-col items-center gap-5 text-center">
+                <h2 class="subtitle">My Quality Services</h2>
+                <p class="max-w-2xl">I transform complex data into actionable insights and compelling visual stories, empowering businesses to make informed decisions and drive success.</p>
+            </div>
+        
+            <!-- List Section -->
+            <div class="my-10">
+                <!-- Service Item 1 -->
+                <div class="service__item">
+                    <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                        <p class="text-primaryColorLight hover:text-whiteColor">01</p>
+                        <p>Prompt Engineering</p>
+                    </div>
+                    <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                        <p>I craft precise and effective prompts that unlock the full potential of AI, enabling intelligent systems to deliver accurate and insightful responses for your business needs.</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="service__item">
+                    <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                        <p class="text-primaryColorLight hover:text-whiteColor">02</p>
+                        <p>Object Oriented Programming in C++</p>
+                    </div>
+                    <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                        <p>I design robust and scalable software solutions using object-oriented programming in C++, ensuring efficient and maintainable code that meets your complex project requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div class="service__item">
+                    <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                        <p class="text-primaryColorLight hover:text-whiteColor">03</p>
+                        <p>Front-end Development</p>
+                    </div>
+                    <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                        <p>I create visually stunning and responsive user interfaces using HTML, CSS, Tailwind CSS, and JavaScript, delivering seamless and engaging web experiences that captivate your audience.</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="service__item">
+                    <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                        <p class="text-primaryColorLight hover:text-whiteColor">04</p>
+                        <p>Data analyze and ML, Python</p>
+                    </div>
+                    <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                        <p>I analyze complex datasets and build powerful machine learning models to uncover valuable insights and drive data-driven decision making, enhancing your business's strategic capabilities.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+        <!-- My Recent Works Section -->
+        <section id="recent_works" class="container">
+            <div class="recent_works_top flex flex-col items-center gap-5 text-center">
+                <h2 class="subtitle">My Recent Works</h2>
+                <p class="max-w-2xl"> I transform complex data into actionable insights and compelling visual stories, empowering businesses to make informed decisions and drive success. My expertise includes data science, web development with HTML, CSS, JavaScript, and Tailwind CSS, as well as programming in Python and C++.</p>
+            </div>
+
+            <div class="recent_works_tabs relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full bg-sectionColor dark:bg-darkSectionColor border border-primaryColor overflow-hidden transition md:h-12 md:text-base">
+                <!-- Indicator -->
+                 <div class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-primaryColorLight md:h-11"></div>
+
+                 <button class="tab relative bock h-8 px-3 rounded-full text-whiteColor md:h-10 md:px-6"data-tabs="all">All</button>
+
+                 <button class="tab relative bock h-8 px-3 rounded-full text-whiteColor md:h-10 md:px-6"data-tabs="uiux">Web-Dev</button>
+
+                 <button class="tab relative bock h-8 px-3 rounded-full text-whiteColor md:h-10 md:px-6"data-tabs="branding">Data Science</button>
+
+                 <button class="tab relative bock h-8 px-3 rounded-full text-whiteColor md:h-10 md:px-6"data-tabs="app">Game-Dev</button>
+            </div>
+
+            <div class="mt-6 relative rounded-3xl">
+                <!-- blob -->
+                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+                 <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2">
+                    <!-- web-dev -->
+                    <!-- project 1 --> 
+                     <li class="work_card uiux relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-1.png" alt="recent works" class="w-full">
+
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div class="flex items-center justify-between bg-gradient-to-r from-primaryColor to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                <div>
+                                    <p class="text-2xl font-bold lg:text-3xl">Task Management</p>
+                                    <p>A task management website helps organize tasks, set deadlines, and track progress.</p>
+                                </div>
+
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+
+                    <!-- project 2 -->
+                     <li class="work_card uiux relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8" >
+                        <img src="images/project-2.jpg" alt="recent works" class="w-full">
+
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div class="flex items-center justify-between bg-gradient-to-r from-primaryColor to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                <div>
+                                    <p class="text-2xl font-bold lg:text-3xl">Youtube Clone</p>
+                                    <p>A YouTube clone lets users upload, share, and watch videos. It features video playback and comments.</p>
+                                </div>
+
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+
+                     <!-- Data Science -->
+                    <!-- project 3 -->
+                     <li class="work_card branding relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-3.jpg" alt="recent works" class="w-full">
+
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div class="flex items-center justify-between bg-gradient-to-r from-primaryColor to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                <div>
+                                    <p class="text-2xl font-bold lg:text-3xl">Bulldozer price prediction</p>
+                                    <p>A bulldozer price prediction project uses data science to forecast future prices. It involves data analysis, modeling, and machine learning.</p>
+                                </div>
+
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+                    
+                    <!-- project 4-->
+                    <li class="work_card branding relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-4.jpg" alt="recent works" class="w-full">
+
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div class="flex items-center justify-between bg-gradient-to-r from-primaryColor to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                <div>
+                                    <p class="text-2xl font-bold lg:text-3xl">Heart Disease prediction</p>
+                                    <p>A heart disease prediction project uses data science to forecast disease risk. It involves data analysis, modeling, and machine learning.</p>
+                                </div>
+
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+
+                     <!-- project 5-->
+                    <li class="work_card branding relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-5 (1).jpg" alt="recent works" class="w-full">
+
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div class="flex items-center justify-between bg-gradient-to-r from-primaryColor to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                <div>
+                                    <p class="text-2xl font-bold lg:text-3xl">Dog Breed  prediction</p>
+                                    <p>A dog breed prediction project uses data science and machine learning to classify dog breeds from images.</p>
+                                </div>
+
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+
+                    <!-- Game-dev -->
+                    <!-- app -->
+                     <!-- project 6 -->
+                     <li class="work_card app relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-5.jpg" alt="recent works" class="w-full">
+
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div class="flex items-center justify-between bg-gradient-to-r from-primaryColor to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                <div>
+                                    <p class="text-2xl font-bold lg:text-3xl">Tic Tac Toe</p>
+                                    <p>A tic-tac-toe project in Python creates a simple game. It involves logic for game rules, player moves, and win detection.</p>
+                                </div>
+
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+
+                    <!-- project 7 --> 
+                    <li class="work_card app relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8"S>
+                        <img src="images/project-6.jpg" alt="recent works" class="w-full">
+
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div class="flex items-center justify-between bg-gradient-to-r from-primaryColor to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                                <div>
+                                    <p class="text-2xl font-bold lg:text-3xl">Sudoku</p>
+                                    <p>A Sudoku game in Python generates and solves puzzles. It includes grid setup, user input, and solution validation.</p>
+                                </div>
+
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+ 
+                 </ul>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="exp_edu" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="container w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Experience -->
+                 <div>
+                    <div class="exp__top flex items-center gap-3">
+                        <div class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+
+                        <h2 class="subtitle">Experience</h2>
+                    </div>
+
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card 1 -->
+                         <div class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3 ">2023 February</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Front-end Developer Internship</p>
+                            <p>VaultofCodes</p>
+                         </div>
+
+                         
+                    </div>
+                 </div>
+
+                <!-- Education -->
+                 <div>
+                    <div class="edu_card flex items-center gap-3">
+                        <div class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h2 class="subtitle">Education</h2>
+                    </div>
+
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card 1 -->
+                        <div class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3 ">2022-Present</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Computer Science Engineering</p>
+                            <p>Department of Technology, Shivaji University</p>
+                         </div>
+
+                         <!-- card 2 -->
+                         <div class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3 ">2021-2022</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">HSC </p>
+                            <p>R.K Talreja college</p>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- My Skills Section -->
+        <section class="container" id="skills">
+            <div class="skills__top flex flex-col items-center gap-5 text-center">
+                <h2 class="subtitle">My Skills</h2>
+                <p class="max-w-2xl">Proficient in leveraging tools and frameworks for comprehensive data processing and predictive modeling & Skilled in front-end development for creating interactive and dynamic web experiences.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10 mt-10">
+                <!-- Numpy icon -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/Numpy.svg" alt="figma" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Numpy</p>
+                </div>
+
+                <!-- Scikit-Learn -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/scikit-learn.svg" alt="scikit-learn" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Scikit-Learn</p>
+                </div>
+
+                <!-- C++ -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/Cpp.svg" alt="C++" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">C++</p>
+                </div>
+
+                <!-- C -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/C.svg" alt="C" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">C</p>
+                </div>
+
+                <!-- Pandas -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/pandas.svg" alt="C" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Pandas</p>
+                </div>
+
+                <!-- Python -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/Python.svg" alt="Python" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Python</p>
+                </div>
+
+                <!-- HTML -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/HTML5.svg" alt="HTML" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">HTML5</p>
+                </div>
+
+                <!-- CSS -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/CSS3.svg" alt="CSS" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">CSS</p>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/Tailwind.svg" alt="Tailwind" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Tailwind</p>
+                </div>
+
+                <!-- JS -->
+                <div class="skills_card max-w-44 w-full">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/js.svg" alt="js" class="max-w-16">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Javascript</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="container">
+                <div class="certification_top flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle">Certifications</h2>
+                    <p class="max-w-2xl">Certified in advanced data analysis and machine learning, continuously expanding my expertise through recognized credentials in the field.</p>
+                </div>
+
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-5">
+                    <!-- git & github -->
+                    <div class="blog_card relative overflow-hidden cursor-pointer">
+                        <img src="./images/git&github.png" alt="github">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColorpy-1 px-3 rounded-full">Git & Github</p>
+                        <div class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-solid fa-certificate">Geekster</i></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- vault od codes -->
+                    <div class="blog_card relative overflow-hidden cursor-pointer">
+                        <img src="./images/vault.png" alt="vault">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColorpy-1 px-3 rounded-full">Frontend</p>
+                        <div class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-solid fa-certificate">VaultofCodes</i></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- data science -->
+                      <div class="blog_card relative overflow-hidden cursor-pointer">
+                        <img src="./images/spoken.png" alt="github">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColorpy-1 px-3 rounded-full">C++ Training</p>
+                        <div class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-solid fa-certificate">Spoken Tutorial</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- prompt eng -->
+                    <div class="blog_card relative overflow-hidden cursor-pointer">
+                        <img src="./images/prompt.png" alt="github">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColorpy-1 px-3 rounded-full">Prompt Engineering</p>
+                        <div class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-solid fa-certificate">LetsUpGrade</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- data science -->
+                    <div class="blog_card relative overflow-hidden cursor-pointer">
+                        <img src="./images/data science.png" alt="github">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColorpy-1 px-3 rounded-full">Data Science</p>
+                        <div class="blog_card_info absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-solid fa-certificate">Udemy</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+       <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class=" flex flex-col md:flex-row-reverse gap-16 md:gap-5 md:items-center">
+        <!-- Content -->
+            <div class="flex-1">
+            <!-- Contact Details -->
+                <div class="flex-1 space-y-7 md:space-y-10 lg:pl-20 xl:pl-40">
+                    <div class="contact_item flex items-start gap-4">
+                        <div class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColor h-12 w-12 lg:h-14 lg:w-14 rounded-full grid place-items-center">
+                        <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="space-y-1">
+                        <p class="text-sm">Phone</p>
+                        <p class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer">+91 8999861659 / 9325555880</p>
+                        </div>
+                    </div>
+
+                    <div class="contact_item flex items-start gap-4">
+                        <div class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColor h-12 w-12 lg:h-14 lg:w-14 rounded-full grid place-items-center">
+                        <i class="fa-regular fa-envelope"></i>
+                        </div>
+                            <div class="space-y-1">
+                                <p class="text-sm">Email</p>
+                                <p class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer">22shraddhajeurkar@gmail.com</p>
+                            </div>
+                    </div>
+
+                     <div class="contact_item flex items-start gap-4">
+                        <div class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColor h-12 w-12 lg:h-14 lg:w-14 rounded-full grid place-items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="space-y-1">
+                                <p class="text-sm">Address</p>
+                                <p class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer">Kher Section, Ambarnath (E), District: Thane, pin: 421501</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Contact Form -->
+        <form class="contact_form flex-1 bg-sectionColor dark:bg-darkSectionColor border border-primaryColor px-8 py-10 md:px-10 md:py-12 rounded-3xl space-y-5">
+            <div class="space-y-5">
+                <!-- Title and Description -->
+                <div>
+                    <h2 class="subtitle">Let’s work together!</h2>
+                    <p class="max-w-2xl py-3">I transform data into actionable insights and develop innovative solutions. It's as straightforward as that!</p>
+                </div>
+
+                <!-- Form Inputs -->
+                <div class="space-y-3">
+                    <div class="flex flex-col md:flex-row items-center gap-3">
+                        <input type="text" placeholder="First name" name="firstname" autocomplete="off" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryColor"/>
+
+                        <input type="text" placeholder="Last name" name="lastname" autocomplete="off" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryColor"/>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center gap-3">
+                        <input type="email" placeholder="Email Address" name="email" autocomplete="off" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryColor"/>
+
+                        <input type="phone" placeholder="Phone Number" name="phone" autocomplete="off" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryColor"/>
+                    </div>
+
+                    <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryColor">
+                        <option selected>Choose a service</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Game Development">Game Development</option>
+                    </select>
+
+                    <textarea name="message" rows="5" placeholder="Message" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryColor"></textarea>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn w-full py-3 rounded-lg bg-primaryColor text-whiteColor hover:bg-primaryColorLight focus:outline-none focus:ring-2 focus:ring-primaryColor">
+                        <span class="z-10">Send message</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-sectionColor dark:bg-darkSectionColor py-10">
+        <div class="container flex flex-col items-center gap-5">
+            <div class="py-5">
+                <img src="images/logo.png" alt="footer logo" class="w-32"/>
+            </div>
+
+            <div>
+                <ul class="flex flex-row gap-5">
+                    <li>
+                        <a href="#quality_services" class="nav-link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#recent_works" class="nav-link">Works</a>
+                    </li>
+
+                    <li>
+                        <a href="#exp_edu" class="nav-link">Resume</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-primaryColorLight">
+                <p>&copy; 2024 All rights reserved by <span class="font-bold">Shraddha</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll up button -->
+     <a href="#" id="scroll-up" class="fixed right-10 bottom-0 bg-primaryColor px-4 py-2 rounded-full text-lg text-whiteColor z-50 hover:-translate-y-1 ease-in duration-200">
+        <i class="fa-solid fa-arrow-up"></i>
+     </a>
+
+    <!-- Scroll Reveal Library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <!-- Typed.js Initialization -->
+<script>
+  var typed = new Typed('#element', {
+    strings: [
+      'Software Eng.',
+      'Data Scientist',
+      'Data Analyst.',
+      'ML Developer.',
+      'Web Developer.'
+    ],
+    typeSpeed: 50,
+    // Additional options if needed
+  });
+
+    // Function to handle click events on social icons
+    document.addEventListener("DOMContentLoaded", function() {
+        const socialIcons = document.querySelectorAll('.social-icon');
+
+        socialIcons.forEach(icon => {
+            icon.addEventListener('click', function() {
+                const iconClass = icon.querySelector('i').classList;
+                if (iconClass.contains('fa-linkedin')) {
+                    window.location.href = 'https://www.linkedin.com/in/shraddha-jeurkar-4419b321b/';
+                } else if (iconClass.contains('fa-instagram')) {
+                    window.location.href = 'https://www.instagram.com/shraddha_jeurkar22/?hl=en';
+                } else if (iconClass.contains('fa-github')) {
+                    window.location.href = 'https://github.com/ShraddhaRJ-22';
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
